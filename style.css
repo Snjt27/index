@@ -1,0 +1,154 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    background-color: #ffffff;
+    color: black;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 6%;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav .tab-default a {
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #000000;
+}
+.nav .tab-default a:hover {
+    text-decoration: underline;
+}
+
+.nav .tab a {
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    color: #000000
+}
+
+.nav .tab a:hover {
+    text-decoration: underline;
+}
+
+
+.image-container {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.image-container img {
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: fill;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translate (-100px);
+    
+}
+
+
+/* Text Content */
+.text-container {
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+}
+
+.student-developer-learner {
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 550;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+/* Social Media Icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.footer-icons .group {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons .group:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.lets-connect {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    background: #ffffff;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 15px 5%;
+    }
+
+    .text-container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .image-container img {
+        width: 150px;
+        height: 150px;
+    }
+}

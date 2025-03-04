@@ -1,0 +1,249 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: black;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 6%;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav .tab-default a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.nav .tab a {
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    color: #000000;
+}
+
+.nav .tab a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f9f9f9;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Projects Grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+.project {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    padding: 50px;
+}
+
+.skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+/* Testimonials
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: #444;
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #000;
+} */
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 50px;
+}
+
+.cta h2 {
+    font-size: 1.9rem;
+}
+
+.cta p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.portfolio-simple-footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #ffffff;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-icons a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.lets-connect {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 15px 5%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-icons a img {
+        width: 35px;
+    }
+}
